@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Montserrat&family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+button{
+  background-color: hsla(240, 36%, 48%, 0.79) !important;
+  box-shadow: none !important;
+  outline: none;
+  border: none !important;
+  border-radius: 5px !important;
+  color: aliceblue !important;
+}
+
+input, textarea{
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #ddd !important;
+  padding-left: 8px !important;
+}
+
+input:focus, textarea{
+  outline: none !important;
+  box-shadow:none !important ;
+}
+
+.ant-spin{
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.ant-btn-dashed{
+  background-color: white !important;
+  color: #4e4ea5 !important;
+  border: 1px dashed #ddd !important;
+  width: 200px !important;
+}
+
+.divider{
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.backButton{
+  background-color: #ddd !important;
+  color: black !important;
+  border: 1px solid gray !important;
+}

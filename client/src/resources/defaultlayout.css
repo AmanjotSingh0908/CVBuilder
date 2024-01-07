@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+
+.layout{
+    height: 100vh;
+    padding: 20px 50px;
+}
+
+.header{
+    height: 10%;
+    background-color: hsla(240, 36%, 48%, 0.921);
+    color: #f0f8ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header>h1{
+    font-size: 25px;
+    
+}
+
+.header>button{
+    border: 1px solid white !important;
+    color: #f0f8ff;
+}
+
+.content{
+    height: 87%;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ddd;
+    padding: 10px;
+}

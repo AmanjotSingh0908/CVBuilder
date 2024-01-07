@@ -1,0 +1,28 @@
+.auth-parent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    
+}
+
+.auth-parent>form{
+    box-shadow: 0 0 3px #ddd;
+    padding: 20px;
+    background-color: whitesmoke !important;
+    border-radius: 5px;
+}
+
+.auth-parent>h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.input-fields{
+    width: 400px;
+    border-radius: 5px;
+    border-color: #ddd;
+    border-width: 1px;
+}
+
