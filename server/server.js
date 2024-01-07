@@ -1,3 +1,5 @@
+const cors = require('cors')
+
 const express = require('express')
 const app = express()
 const dbConnect = require('./dbConnect')
@@ -7,7 +9,14 @@ const userRoute = require('./routes/userRoute.js')
 
 app.use('/api/user/', userRoute)
 
-
+app.use(cors({
+    origin: [
+        "http://localhost:3000",
+        "https://cv-builder-8t9d.vercel.app"
+    ],
+    credentials: true,
+    
+}))
 
 
 app.get('/', (req,res) => res.send('Hello World!'))

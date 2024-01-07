@@ -13,7 +13,7 @@ function Login() {
   const onFinish = async (values) => {
     setLoading(true)
     try {
-      const user = await axios.post(`${host}/api/user/login`, values)
+      const user = await axios.post(`https://1q9p77n2x1.execute-api.ap-south-1.amazonaws.com/dev/api/user/login`, values)
       message.success("Login successfull")
       localStorage.setItem('resumebuilder-user', JSON.stringify(user.data));
       setLoading(false)
