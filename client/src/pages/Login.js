@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import "../resources/authentication.css";
 import { Flex, Spin } from 'antd';
+import { host } from "../host";
 
 
 function Login() {
@@ -12,7 +13,7 @@ function Login() {
   const onFinish = async (values) => {
     setLoading(true)
     try {
-      const user = await axios.post('api/user/login', values)
+      const user = await axios.post(`${host}api/user/login`, values)
       message.success("Login successfull")
       localStorage.setItem('resumebuilder-user', JSON.stringify(user.data));
       setLoading(false)
