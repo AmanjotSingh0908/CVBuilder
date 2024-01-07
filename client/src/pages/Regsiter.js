@@ -4,6 +4,8 @@ import '../resources/authentication.css';
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { Flex, Spin } from 'antd';
+import { host } from "../host";
+
 
 
 function Regsiter() {
