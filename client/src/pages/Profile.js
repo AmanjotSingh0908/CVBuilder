@@ -14,8 +14,9 @@ function Profile() {
   const user = JSON.parse(localStorage.getItem('resumebuilder-user'))
   const onFinish = async (values) => {
     setLoading(true)
+    console.log(values)
       try {
-        const result = await axios.post(`https://1q9p77n2x1.execute-api.ap-south-1.amazonaws.com/dev/api/user/update`, {...values, _id : user._id });
+        const result = await axios.post(`https://1q9p77n2x1.execute-api.ap-south-1.amazonaws.com/dev/api/user/update`, {...values, _id : user._id }, {withCredentials:true});
         localStorage.setItem('resumebuilder-user', JSON.stringify(result.data))
         setLoading(false);
         message.success("Profile Updated successfully");
