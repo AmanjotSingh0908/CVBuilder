@@ -32,7 +32,7 @@ function Profile() {
       <div className="update-profile">
       <h4><b>Update Profile</b></h4>
       <hr></hr>
-        <Form layout="vertical" onFinish={onFinish} initialValues={user}>
+        <Form layout="vertical" initialValues={user}>
           <Tabs defaultActiveKey="1"> 
             <TabPane tab="Personal Info" key="1">
               <PersonalInfo />
@@ -44,7 +44,7 @@ function Profile() {
               <ExperienceProjects />
             </TabPane>
           </Tabs>
-          <Button htmlType="submit">UPDATE</Button>
+          <Button onClick={onFinish}>UPDATE</Button>
         </Form>
       </div>
     </DefaultLayout>
