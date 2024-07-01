@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const URL = "mongodb+srv://amanjotsingh0908:aman0908@amanjot0908.nen3ytm.mongodb.net/resume-builder"
+const URL = "YOUR MONGO URL/resume-builder"
 
 mongoose.connect(URL)
 
