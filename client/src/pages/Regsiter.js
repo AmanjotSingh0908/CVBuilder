@@ -14,8 +14,9 @@ function Regsiter() {
   const onFinish = async (values) => {
     setLoading(true)
       try {
-        axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-        await axios.post(`https://1q9p77n2x1.execute-api.ap-south-1.amazonaws.com/dev/api/user/register`, values, {withCredentials: true});
+        // axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+        // await axios.post(`https://1q9p77n2x1.execute-api.ap-south-1.amazonaws.com/dev/api/user/register`, values, {withCredentials: true});
+        await axios.post(`http://localhost:5000/user/register`, values, {withCredentials: true});
         setLoading(false);
         message.success("Registration successfull");
       } catch (error) {
